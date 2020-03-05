@@ -42,11 +42,28 @@ body {
   
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #welcome-section h1 {
   color: white;
   text-align: center;
-  padding-top: 100px;
-  font-size: 6rem;
+  padding-top: 280px;
+  font-size: 5rem;
   font-weight: 700
     
 }
@@ -60,20 +77,20 @@ body {
 }
 
 img {
-      width: 467px;
-      height: 434px;
-      }
+      width: 430px;
+      height: 410px;
 }
 
 .project-tile {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 57px;
   justify-content: center;
+  grid-row-gap: 70px;
+  grid-column-gap: 50px;
 }
+
 #projects {
   background-color: #45567D;
-  height: ;
 }
 
 #projects h2 {
@@ -87,6 +104,32 @@ img {
     padding-top: 60px;
   }
 
+ .contact-links ul {
+   display: flex; 
+   list-style: none;
+   justify-content: center;
+  
+
+  }
+
+  .contact-links ul li {
+    position: relative;
+  }
+
+  .contact-links > li {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+.contact-links > li:hover {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  color: red;
+
+}
+
+  
 .images-box p {
   font-size: 2rem;
   padding: 0.5rem 0.5rem;
@@ -100,7 +143,7 @@ img {
   
   text-align: center;
   font-weight: 400;
-  padding: 2em 0.5rem;
+  padding: 3em 0.5rem;
 
 }
 
@@ -124,7 +167,7 @@ a {
   text-align: center;
   line-height: 1.4;
   font-size: 77px;
-  padding-top: 30px;
+  padding-top: 35px;
   
 }
 
@@ -132,6 +175,8 @@ a {
   text-align: center;
   font-style: italic;
   font-size: 25px;
+  font-weight: 400;
+  color:whitesmoke;
 }
 
 .contact-links {
@@ -143,13 +188,27 @@ footer {
   background-color: #303841;
   display: flex;
   font-size: 22px;
-  text-align: center;
+ /* text-align: center;*/
   padding: 33px;
+  justify-content: center;
 }
 
  span {
-  display: none;
+  color: #303841;
   
+}
+
+.free {
+  color: inherit;
+}
+#projects div div a p:hover  span{
+  color: #BE3144;
+  transition: color 0.3s ease-out;
+}
+
+#projects div div a p:{
+  position: relative;
+  display: inline;
 }
 
 span:hover {
@@ -163,8 +222,8 @@ visibility: visible;
 }
 
 .contact-links {
-      margin-top: 4rem;
-      padding-bottom: 4rem;
+      margin-top: 6rem;
+      padding-bottom: 8rem;
     
 }
 
@@ -190,6 +249,14 @@ footer i {
       border-radius: 2px;
       padding-bottom: 85px;
 
+}
+
+@media only screen and (max-width: 768px) {
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
   /*opacity: 1;
   transition-delay: 0s;
