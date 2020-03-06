@@ -22,10 +22,10 @@ body {
 }
 
 #navbar ul li a {
-    font-size: 40px;
-    padding: 20px;
-    color : white;
-    text-decoration: none;
+  font-size: 40px;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
 }
 
 #navbar ul {
@@ -38,34 +38,15 @@ body {
 
 #welcome-section {
   background-color: #202022;
-  height: 97vh;
-  
+  height: 100vh; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #welcome-section h1 {
   color: white;
   text-align: center;
   padding-top: 280px;
   font-size: 5rem;
-  font-weight: 700
-    
+  font-weight: 700;
 }
 
 #welcome-section p {
@@ -77,16 +58,16 @@ body {
 }
 
 img {
-      width: 430px;
-      height: 410px;
+  width: 400px;
+  height: 400px;
 }
 
 .project-tile {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
-  grid-row-gap: 70px;
-  grid-column-gap: 50px;
+  grid-row-gap: 77px;
+  grid-column-gap: 38px;
 }
 
 #projects {
@@ -94,53 +75,40 @@ img {
 }
 
 #projects h2 {
-    margin: 0 auto 4rem auto;
-    border-bottom: 0.2rem solid white;
-    font-size: 3.2rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    max-width: 770px;
-    padding-top: 60px;
-  }
-
- .contact-links ul {
-   display: flex; 
-   list-style: none;
-   justify-content: center;
-  
-
-  }
-
-  .contact-links ul li {
-    position: relative;
-  }
-
-  .contact-links > li {
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-.contact-links > li:hover {
-  position: absolute;
-  left: 0;
-  top: 50px;
-  color: red;
-
+  margin: 0 auto 4rem auto;
+  border-bottom: 0.2rem solid white;
+  font-size: 3.2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  max-width: 770px;
+  padding-top: 60px;
 }
 
-  
+.contact-links ul {
+  display: flex; 
+  list-style: none;
+  justify-content: center;
+}
+
+.contact-links ul li {
+  position: relative;
+}
+
+.contact-links ul  a:hover{
+  margin-top:25px ;
+  transition: 0.4s;
+}
+
 .images-box p {
   font-size: 2rem;
   padding: 0.5rem 0.5rem;
-  
   text-align: center;
   cursor: pointer;
 }
 
 .show {
   font-size: 2rem;
-  
   text-align: center;
   font-weight: 400;
   padding: 3em 0.5rem;
@@ -168,7 +136,6 @@ a {
   line-height: 1.4;
   font-size: 77px;
   padding-top: 35px;
-  
 }
 
 .contact p {
@@ -188,19 +155,18 @@ footer {
   background-color: #303841;
   display: flex;
   font-size: 22px;
- /* text-align: center;*/
   padding: 33px;
   justify-content: center;
 }
 
  span {
   color: #303841;
-  
 }
 
 .free {
   color: inherit;
 }
+
 #projects div div a p:hover  span{
   color: #BE3144;
   transition: color 0.3s ease-out;
@@ -217,21 +183,17 @@ visibility: visible;
 }
 
 .btn {
-      padding: 20px;
-      border-radius: 6px;
+  padding: 20px;
+  border-radius: 6px;
 }
 
 .contact-links {
-      margin-top: 6rem;
-      padding-bottom: 8rem;
-    
+  margin-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .contact:hover {
   animation-fill-mode: forwards;
-}
-
-footer {
 }
 
 footer p {
@@ -240,35 +202,95 @@ footer p {
 
 footer i {
   margin: 2rem;
-
 }
 
 .cab{
-      background-color: #303841;
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      border-radius: 2px;
-      padding-bottom: 85px;
+  background-color: #303841;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  padding-bottom: 85px;
 
+}
+
+.contact-links ul li {
+  position: relative;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-links ul li:hover {
+  transform: translateY(8px);
 }
 
 @media only screen and (max-width: 768px) {
   .project-tile {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
     align-items: center;
+    margin-bottom: 40px;
+  }
+
+  #navbar ul li a {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contact-links ul{
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
   }
 }
-  /*opacity: 1;
-  transition-delay: 0s;
-  transition-duration: 0.4s;
+
+@media only screen and (min-width: 768px) {
+  img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .project-tile {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-row-gap: 58px;
+    grid-column-gap: 34px;
+  }
 }
 
-.example .content:hover .text {
-  opacity: 1;
-  transform: translateY(250px);
-  -webkit-transform: translateY(250px);
+@media only screen and (min-width: 900px) {
+  .project-tile {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-row-gap: 77px;
+    grid-column-gap: 38px;
+  }
   
+  img {
+    height: 400px;
+    width: 500px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+  img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .project-tile {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-row-gap: 64px;
+    grid-column-gap: 41px;
+  }
+
+  .contact-links ul li {
+    position: relative;
+    transition: transform 0.3s ease-out;
 }
 
- 
-
+.contact-links ul li:hover {
+  transform: translateY(8px);
+}
