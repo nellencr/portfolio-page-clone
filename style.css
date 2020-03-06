@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+}
+
+#navbar {
+  background-color: #BE3144;
+  height: 100px;
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#navbar ul li a {
+  font-size: 40px;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  float: right;
+  font-weight: 700;
+  padding: 20px;
+}
+
+#welcome-section {
+  background-color: #202022;
+  height: 100vh; 
+}
+
+#welcome-section h1 {
+  color: white;
+  text-align: center;
+  padding-top: 280px;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+#welcome-section p {
+  color: #BE3144;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+.project-tile {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  grid-row-gap: 77px;
+  grid-column-gap: 38px;
+}
+
+#projects {
+  background-color: #45567D;
+}
+
+#projects h2 {
+  margin: 0 auto 4rem auto;
+  border-bottom: 0.2rem solid white;
+  font-size: 3.2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  max-width: 770px;
+  padding-top: 60px;
+}
+
+.contact-links ul {
+  display: flex; 
+  list-style: none;
+  justify-content: center;
+}
+
+.contact-links ul li {
+  position: relative;
+}
+
+.contact-links ul  a:hover{
+  margin-top:25px ;
+  transition: 0.4s;
+}
+
+.images-box p {
+  font-size: 2rem;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.show {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  padding: 3em 0.5rem;
+
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.show a{
+  background-color: #303841;
+}
+
+.contact {
+  background-color: #303841;
+}
+
+.contact h2 {
+  font-family: 'Raleway',serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 77px;
+  padding-top: 35px;
+}
+
+.contact p {
+  text-align: center;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 400;
+  color:whitesmoke;
+}
+
+.contact-links {
+  border-bottom: 0.2rem solid #BE3144;
+  text-align: center
+}
+
+footer {
+  background-color: #303841;
+  display: flex;
+  font-size: 22px;
+  padding: 33px;
+  justify-content: center;
+}
+
+ span {
+  color: #303841;
+}
+
+.free {
+  color: inherit;
+}
+
+#projects div div a p:hover  span{
+  color: #BE3144;
+  transition: color 0.3s ease-out;
+}
+
+#projects div div a p:{
+  position: relative;
+  display: inline;
+}
+
+span:hover {
+ color: #BE3144;
+visibility: visible;
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.contact-links {
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.contact:hover {
+  animation-fill-mode: forwards;
+}
+
+footer p {
+  margin: 2rem;
+}
+
+footer i {
+  margin: 2rem;
+}
+
+.cab{
+  background-color: #303841;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  padding-bottom: 85px;
+
+}
+
+.contact-links ul li {
+  position: relative;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-links ul li:hover {
+  transform: translateY(8px);
+}
+
+@media only screen and (max-width: 768px) {
+  .project-tile {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  #navbar ul li a {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contact-links ul{
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .project-tile {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-row-gap: 58px;
+    grid-column-gap: 34px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .project-tile {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-row-gap: 77px;
+    grid-column-gap: 38px;
+  }
+  
+  img {
+    height: 400px;
+    width: 500px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+  img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .project-tile {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-row-gap: 64px;
+    grid-column-gap: 41px;
+  }
+
+  .contact-links ul li {
+    position: relative;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-links ul li:hover {
+  transform: translateY(8px);
+}
